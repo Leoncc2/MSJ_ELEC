@@ -66,7 +66,7 @@ def consulta_mail():
 
 @app.route('/consultamensajes')
 def consulta_mensajes():
-    usu='alexillo@gmail.com'
+    usu=session['username']
     resultado=controlador.listar_mensajes(usu)
     return jsonify(resultado)
 
