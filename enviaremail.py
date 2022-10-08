@@ -2,7 +2,7 @@ from email.message import EmailMessage
 import smtplib
 
 def enviar_email(email_destino,codigo):
-    remitente = "vaccar@uninorte.edu.co"
+    remitente = "jlcarrillo@uninorte.edu.co"
     destinatario = email_destino
     mensaje = "Codigo de Activacion: "+ codigo
     email = EmailMessage()
@@ -18,7 +18,7 @@ def enviar_email(email_destino,codigo):
 
 
 def recuperar_email(email_destino):
-    remitente = "vaccar@uninorte.edu.co"
+    remitente = "jlcarrillo@uninorte.edu.co"
     destinatario = email_destino
     mensaje = "<h2>Correo de Restablecimiento de Contraseñas</h2>"
     mensaje=mensaje+ "<a href='http://localhost:5000/restablecer/"+email_destino+"'>Click para Restablecer la contraseña</a>"

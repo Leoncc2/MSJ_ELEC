@@ -6,7 +6,7 @@ from unittest import result
 from flask import flash
 import enviaremail
 
-DB_NAME='bdecommerce.s3db'
+DB_NAME='bdecommerce.s2db'
 
 def conexion():
     conn=sqlite3.connect(DB_NAME)
