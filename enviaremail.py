@@ -4,9 +4,7 @@ import smtplib
 def enviar_email(email_destino,codigo):
     remitente = "jlcarrillo@uninorte.edu.co"
     destinatario = email_destino
-    mensaje = "<h2>Correo de Restablecimiento de Contraseñas</h2>"
-    mensaje=mensaje+ "<a href='https://minticmensajeriaelectronica.herokuapp.com/restablecer/"+email_destino+"'>Click para Restablecer la contraseña</a>"
-    mensaje = "Codigo de Activacion: "+ codigo + "<a href='https://minticmensajeriaelectronica.herokuapp.com/restablecer/"+email_destino+"'>Click para Ingresar</a>"
+    mensaje = "Codigo de Activacion: "+ codigo + "<a href=\n'https://minticmensajeriaelectronica.herokuapp.com/restablecer/"+email_destino+"'>Click para Ingresar</a>"
     email = EmailMessage()
     email["From"] = remitente
     email["To"] = destinatario
