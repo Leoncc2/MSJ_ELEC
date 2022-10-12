@@ -2,7 +2,7 @@ function verdatos(){
     var listapost;
     var identificador=document.getElementById("login_usuario").innerHTML;
     console.log(identificador)
-    var url="https://minticmensajeriaelectronica.herokuapp.com/"
+    var url="https://minticmensajeriaelectronica.herokuapp.com/consultarmail"
     var datos={
         "username":identificador,
         "tipo":2  }
