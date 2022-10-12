@@ -100,12 +100,12 @@ def activar_cuenta():
     usu=datos['usuario']
     codver=datos['codverificacion']
     resultado=controlador.activar_cuenta(usu,codver)
-    if resultado:
+    if resultado=='SI':
         flash('Cuenta Activada Satisfactoriamente')
     else:
-        flash('Error en Activacion')
-    return redirect(url_for('validar'))        
+        flash('Error en Activacion')   
 
+    return redirect(url_for('validar'))  
 
 
 @app.route('/validarlogin', methods=['POST'])
