@@ -5,7 +5,7 @@ def enviar_email(email_destino,codigo):
     remitente = "jlcarrillo@uninorte.edu.co"
     destinatario = email_destino
     mensaje = "Codigo de Activacion: "+ codigo
-    mensaje=mensaje +'\n' "<a href='https://minticmensajeriaelectronica.herokuapp.com'>Click para Ingresar</a>"
+    mensaje=mensaje +'\n' "<a href='https://minticmensajeriaelectronica.herokuapp.com/validar'>Click para Ingresar</a>"
     email = EmailMessage()
     email["From"] = remitente
     email["To"] = destinatario
